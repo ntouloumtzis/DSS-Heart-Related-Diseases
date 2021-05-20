@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.6;
+  font-family: 'Poppins', sans-serif;
+  color: #f4f1de;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background-image: linear-gradient(130deg, #2bae66e8 13%, #006b38e8 79%), url('../images/heart-illustration.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.container {
+  width: 80%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.box {
+  margin-bottom: 1em;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+}
+
+/* 
+  Locally
+*/
+
+.headline {
+  text-align: center;
+  margin-bottom: 3em;
+}
+
+.headline__title {
+  font-size: 3rem;
+  text-shadow: 1px 1px 2px #000;
+  margin-bottom: 0;
+}
+
+.headline__note {
+  margin-top: .5em;
+  font-style: italic;
+  font-weight: 600;  
+}
+
+.form {
+  color: #2BAE66;
+  background-color: #FCF6F5;
+  padding: 3em 2em;
+  border-radius: 40px;
+  font-size: 1.125rem;
+  margin-bottom: 1em;
+}
+
+.label {
+  font-weight: 600;
+  margin-bottom: .5em;
+}
+
+.info {
+  font-size: .7rem;
+  font-style: italic;
+  color: #184A45;
+}
+
+.input {
+  font-family: inherit;
+  color: #000;
+  font-size: 1.125rem;
+  padding: .5em;
+  border-radius: 0;
+  border: none;
+  border-left: 5px solid #2BAE66;
+  box-shadow: 0 1px 2px #2BAE66;
+}
+
+
+input[type=radio] {
+  border: 0;
+  width: 5%;
+  height: 1.5em;
+}
+
+.btn {
+  margin-top: .75em;
+  color: #FCF6F5;
+  background-color: #2BAE66;
+  font-family: inherit;
+  padding: .5em 0;
+  font-weight: bold;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btnReset {
+  background-color: #d00000;
+}
+
+.btn:hover {
+  background-color: #006b38;
+  transition: .2s;
+}
+
+.btnReset:hover {
+  background-color: #9d0208;
+  transition: .2s;
+}
+
+#result {
+  font-size: 3rem;
+  font-weight: 700;
+  text-shadow: 1px 1px 1px #000;
+  margin: auto;
+  margin-top: 1em;
+}
+
+@media (max-width: 750px) {
+  .container {
+    width: 95%;
+  }
+
+  .form {
+    margin-bottom: 0;  
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 100%;
+  }
+
+  .headline__title {
+    font-size: 2rem;
+  }
+
+  .form {
+    border-radius: 20px;
+  }
+}
+
+@media (max-width: 375px) {
+  .headline__title {
+    font-size: 1.7rem;
+  }
+
+  .form {
+    border-radius: 10px 10px 0 0;
+  }
+}
