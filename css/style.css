@@ -37,11 +37,6 @@ body::before {
   margin-bottom: 1em;
 }
 
-.row {
-  display: flex;
-  align-items: center;
-}
-
 /* 
   Locally
 */
@@ -92,13 +87,6 @@ body::before {
   border: none;
   border-left: 5px solid #2BAE66;
   box-shadow: 0 1px 2px #2BAE66;
-}
-
-
-input[type=radio] {
-  border: 0;
-  width: 5%;
-  height: 1.5em;
 }
 
 .btn {
