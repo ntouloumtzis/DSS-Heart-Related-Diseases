@@ -1,4 +1,4 @@
-# DSS-Heart-Related-Diseases
+# Heart Related Diseases Detector
 
 > Find the dataset **[here](https://archive.ics.uci.edu/ml/datasets/Statlog+%28Heart%29)**
 
